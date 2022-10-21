@@ -41,3 +41,5 @@ validationPredictions = kfoldPredict(partitionedModel);
 
 % Compute validation RMSE
 validationRMSE = sqrt(kfoldLoss(partitionedModel, 'LossFun', 'mse'));
+% to make To make predictions with the returned 'trainedModel' on new data T(table), use
+% yfit = trainedModel.predictFcn(T)
